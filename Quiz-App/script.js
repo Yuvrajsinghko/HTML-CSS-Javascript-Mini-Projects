@@ -92,7 +92,7 @@ function showQuestion(){
   answersDisabled = false;
   const currentQuestion = quizQuestions[currentQuestionIndex]
   currentQuestionSpan.textContent = currentQuestionIndex +1;
-  const progressPercent = (currentQuestionIndex / quizQuestions.length) *100;
+  const progressPercent = (currentQuestionIndex  / quizQuestions.length) *100;
   progressBar.style.width = progressPercent + "%";
   questionText.textContent = currentQuestion.question;
 
@@ -136,7 +136,7 @@ function selectAnswer(event){
       showQuestion();
 
     }else{
-      showResulta();
+      showResults();
     }
   },1000)
 
@@ -146,10 +146,10 @@ function selectAnswer(event){
 function showResults(){
   quizScreen.classList.remove("active");
   resultScreen.classList.add("active");
-
+  progressBar.style.width = "100%";
   finalScoreSpan.textContent = score;
-
-  const percentage = (score/quizQuestions.lenth)*100;
+  const percentage = (score/quizQuestions.length)*100;
+  
   if(percentage == 100 ){
     resultMessage.textContent = "Perfect! You are genius!";
 
