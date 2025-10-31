@@ -121,7 +121,7 @@ function selectAnswer(event){
   Array.from(answersContainer.children).forEach(button =>{
     if(button.dataset.correct === "true"){
       button.classList.add("correct");
-    }else{
+    }else if (button ===selectedButton){
       button.classList.add("incorrect");
     }
   });
