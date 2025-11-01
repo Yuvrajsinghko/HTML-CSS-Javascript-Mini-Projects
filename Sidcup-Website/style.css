@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'montserrat';
+  font-family: "montserrat";
 }
 
 html,
@@ -14,18 +14,18 @@ body {
   color: #fff;
 }
 
-#cursor{
+#cursor {
   height: 20px;
   width: 20px;
-  background-color:#95C11E;
+  background-color: #95c11e;
   border-radius: 50%;
   position: fixed;
   z-index: 9999;
 }
-#cursor-blur{
+#cursor-blur {
   height: 500px;
   width: 500px;
-  background-color:#96c11e2b;
+  background-color: #96c11e2b;
   border-radius: 50%;
   position: fixed;
   filter: blur(40px);
@@ -84,13 +84,13 @@ video {
   font-weight: 900;
   position: relative;
 }
-#page1 h1::before{
+#page1 h1::before {
   content: "EAT. DRINK. PLAY.";
   position: absolute;
   color: black;
   top: -6px;
-  left:-6px;
-  -webkit-text-stroke: 2px #95C11E;
+  left: -6px;
+  -webkit-text-stroke: 2px #95c11e;
   z-index: -1;
 }
 
@@ -106,9 +106,54 @@ video {
   width: 40%;
 }
 
-#page2{
+#page2 {
   height: 100vh;
   width: 100%;
   z-index: 10;
+}
 
+#scroller {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  position: relative;
+  z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+  display: none;
+}
+
+
+#scroller-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+#scroller h4 {
+  display: inline-block;
+  font-size: 120px;
+  font-weight: 900;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  margin-right: 10px;
+  transition: all linear 0.5;
+  -webkit-text-stroke:2px #95c11e ;
+  color: transparent;
+}
+#scroller h4:hover{
+  color: #95c11e;
+}
+
+@keyframes scroll{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
 }
