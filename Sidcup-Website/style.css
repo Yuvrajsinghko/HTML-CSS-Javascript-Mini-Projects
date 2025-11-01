@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -107,7 +108,7 @@ video {
 }
 
 #page2 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   z-index: 10;
 }
@@ -136,9 +137,9 @@ video {
 
 #scroller h4 {
   display: inline-block;
-  font-size: 120px;
+  font-size: 140px;
   font-weight: 900;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: sans-serif;
   text-transform: uppercase;
   margin-right: 10px;
   transition: all linear 0.5;
@@ -156,4 +157,72 @@ video {
   to{
     transform: translateX(-100%);
   }
+}
+
+#about-us{
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+  
+}
+#about-us img{
+  height: 220px;
+  width: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+  position: relative;
+  z-index: 10;
+  
+}
+#about-us-in{
+  width: 40%;
+  text-align: center;
+}
+
+#about-us-in h3{
+  font-size: 54px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+#about-us-in p{
+  font-size: 21px;
+  line-height: 26px;
+}
+
+#cards-container{
+  
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+  z-index: 10;
+}
+
+.card{
+  height: 80%;
+  width: 22%;
+  
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+#card1{
+  background-image: url(Assets/card1.avif);
+
+}
+
+#card2{
+  background-image: url(Assets/card2.webp);
+
+}
+#card3{
+  background-image: url(Assets/card3.avif);
+
 }
