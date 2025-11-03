@@ -249,6 +249,7 @@ video {
   font-size: 36px;
   font-weight: 800;
   white-space: nowrap;
+  margin-bottom: 30px;
 }
 
 .overlay p{
