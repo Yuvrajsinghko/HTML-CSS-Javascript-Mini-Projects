@@ -78,7 +78,22 @@ gsap.from("#green-div h4", {
   scrollTrigger: {
     trigger: "#green-div",
     scroller: "body",
+    start: "top 70%",
+    end: "top 65%",
+    scrub: 1,
+  },
+});
+
+let leftColon = document.querySelector("#colon1");
+let rightColon = document.querySelector("#colon2");
+
+gsap.from(leftColon, {
+  x: -30,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#page3 #colon1",
     markers: true,
+    scroller: "body",
     start: "top 70%",
     end: "top 65%",
     scrub: 1,
