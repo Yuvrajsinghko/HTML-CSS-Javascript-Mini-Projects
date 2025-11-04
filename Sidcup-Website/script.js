@@ -55,10 +55,25 @@ gsap.from("#about-us img,#about-us-in",{
   scrollTrigger:{
     trigger:"#about-us",
     scroller:"body",
-    markers:true,
-    start:"top 60%",
-    end:"top 58%",
+    
+    start:"top 70%",
+    end:"top 65%",
     scrub:3
   }
   
+});
+
+gsap.from(".card",{
+  scale:0.8,
+  opacity:0,
+  duration:0.5,
+  stagger:0.1,
+  scrollTrigger:{
+    trigger:".card",
+    scroller:"body",
+    markers:true,
+    start:"top 70%",
+    end:"top 65%",
+    scrub:1
+  }
 });
