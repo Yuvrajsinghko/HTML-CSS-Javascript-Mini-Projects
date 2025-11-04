@@ -102,9 +102,9 @@ video {
   font-weight: 800;
   margin: 20px;
 }
-#page1 h2:hover {
+/* #page1 h2:hover {
   color: #95c11e;
-}
+} */
 
 #page1 p {
   font-size: 18px;
@@ -169,6 +169,7 @@ video {
   align-items: center;
   justify-content: space-around;
   padding: 0 50px;
+  margin-bottom: 80px;
 }
 #about-us img {
   height: 220px;
@@ -177,6 +178,7 @@ video {
   object-fit: cover;
   position: relative;
   z-index: 10;
+  
 }
 #about-us-in {
   width: 40%;

@@ -47,6 +47,18 @@ gsap.to("#main", {
     scrub: 2,
   },
 });
-gsap.to(crsr,{
-
+gsap.from("#about-us img,#about-us-in",{
+  y:50,
+  opacity:0,
+  duration:1,
+  stagger:0.4,
+  scrollTrigger:{
+    trigger:"#about-us",
+    scroller:"body",
+    markers:true,
+    start:"top 60%",
+    end:"top 58%",
+    scrub:3
+  }
+  
 });
