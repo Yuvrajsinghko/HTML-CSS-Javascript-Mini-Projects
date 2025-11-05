@@ -13,11 +13,13 @@ h4all.forEach(function (a) {
     crsr.style.scale = 3;
     crsr.style.border = "1px solid #fff";
     crsr.style.backgroundColor = "transparent";
+    
   });
   a.addEventListener("mouseleave", function () {
     crsr.style.scale = 1;
     crsr.style.border = "0px solid #95c11e";
     crsr.style.backgroundColor = "#95c11e";
+    
   });
 });
 
@@ -88,14 +90,27 @@ let leftColon = document.querySelector("#colon1");
 let rightColon = document.querySelector("#colon2");
 
 gsap.from(leftColon, {
-  x: -30,
+  x: -70,
+  y:-70,
   duration: 1,
   scrollTrigger: {
     trigger: "#page3 #colon1",
-    markers: true,
     scroller: "body",
     start: "top 70%",
     end: "top 65%",
-    scrub: 1,
+    scrub: 4,
+  },
+});
+
+gsap.from(rightColon, {
+  x: 70,
+  y:70,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#page3 #colon1",
+    scroller: "body",
+    start: "top 70%",
+    end: "top 65%",
+    scrub: 4,
   },
 });
