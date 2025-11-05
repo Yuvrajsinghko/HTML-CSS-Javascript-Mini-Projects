@@ -340,7 +340,7 @@ video {
   font-weight: 800;
   position: absolute;
   z-index: 10;
-  transition: all ease 0.5s;
+  transition: all ease 1s;
 }
 
 .elem img {
