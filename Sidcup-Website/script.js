@@ -49,14 +49,14 @@ gsap.to("#main", {
 gsap.from("#about-us img,#about-us-in", {
   y: 50,
   opacity: 0,
-  duration: 1,
+  duration: 2,
   stagger: 0.4,
   scrollTrigger: {
     trigger: "#about-us",
     scroller: "body",
     start: "top 70%",
     end: "top 65%",
-    scrub: 3,
+    scrub: 1,
   },
 });
 
