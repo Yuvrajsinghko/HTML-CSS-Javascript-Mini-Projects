@@ -283,7 +283,6 @@ video {
 #page3 {
   height: 80vh;
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,7 +313,7 @@ video {
 #page4 {
   height: 50vh;
   width: 100%;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -341,14 +340,14 @@ video {
   font-weight: 800;
   position: absolute;
   z-index: 10;
-  transition: all ease 0.5s ;
+  transition: all ease 0.5s;
 }
 
 .elem img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  scale:1.1;
+  scale: 1.1;
 }
 
 .elem:hover h2 {
@@ -357,5 +356,6 @@ video {
 }
 
 .elem:hover img {
-  scale:1
+  scale: 1;
 }
+
