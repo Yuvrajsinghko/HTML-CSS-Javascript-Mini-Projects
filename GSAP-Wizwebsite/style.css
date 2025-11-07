@@ -23,25 +23,29 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 80px;
+    padding: 70px 100px;
 }
-nav i{
-    margin-right: 15px;
-}
+
 
 .part2{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:80px
+    gap:60px
 }
 
 nav h1{
     font-size: 50px;
 }
+nav h1 i{
+    margin-right: 15px;
+    rotate: 45deg;
+    display: inline-block;
+    font-size: 55px;
+}
 
 nav h4{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
 }
 
@@ -52,4 +56,64 @@ nav button{
     border: 1px solid #000 ;
     font-size: 22px;
     background-color: transparent;
+}
+
+.center{
+    height: 80%;
+    width: 100%;
+    
+    display: flex;
+    padding: 70px 100px;
+
+}
+
+.center-part-1{
+    background-color: darkgoldenrod;
+    height: 100%;
+    width: 40%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    
+}
+.center-part-1 h1{
+    line-height: 90px;
+    font-size: 80px;
+    font-weight: 200;
+    color:#000;
+    
+}
+.center-part-1 p{
+    font-size: 20px;
+    color:#000;
+    width: 95%;
+    line-height:25px;
+}
+.center-part-1 button{
+    padding: 20px 35px;
+    font-size: 19px;
+    border-radius:15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    
+    
+}
+
+.center-part-2{
+    background-color:darkcyan;
+    height: 100%;
+    width: 60%;
+    position: relative;
+    
+}
+
+.center-part-2 img{
+    height: 100%;
+    width: 78%;
+    position: absolute;
+    right: 0;
 }
