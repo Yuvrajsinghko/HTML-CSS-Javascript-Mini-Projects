@@ -12,11 +12,11 @@ body {
 }
 
 @font-face {
-    font-family: 'domain';
+    font-family: domaine;
     src: url("./Fonts/domain.ttf");
 }
 @font-face {
-    font-family: 'canopee';
+    font-family: canopee;
     src: url("./Fonts/domain.ttf");
 }
 
@@ -100,8 +100,47 @@ body {
     overflow: hidden;
 }
 #elem1 h4{
-    font-size: 20px;
+    font-size: 28px;
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: canopee;
+    font-weight: 600;
 }
+#elem1 h4 span{
+    background-color: #B73C12;
+    color: #fff;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#elem1 p{
+    font-size: 22px;
+    font-family: domaine;
+    font-weight: 100;
+    color: #5f5c5c;
+}
+#elem3 h4{
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: canopee;
+    font-weight: 600;
+}
+#elem3 h4 span{
+    background-color: #B73C12;
+    color: #fff;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#elem3 p{
+    font-size: 22px;
+    font-family: domaine;
+    font-weight: 100;
+    color: #5f5c5c;
+}
+
