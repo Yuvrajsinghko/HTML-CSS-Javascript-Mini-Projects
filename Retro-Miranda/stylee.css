@@ -11,6 +11,15 @@ body {
   width: 100%;
 }
 
+@font-face {
+    font-family: 'domain';
+    src: url("./Fonts/domain.ttf");
+}
+@font-face {
+    font-family: 'canopee';
+    src: url("./Fonts/domain.ttf");
+}
+
 #page1 {
   height: 100vh;
   width: 100vw;
@@ -94,4 +103,5 @@ body {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: canopee;
 }
