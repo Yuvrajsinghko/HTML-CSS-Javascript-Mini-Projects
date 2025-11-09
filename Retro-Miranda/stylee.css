@@ -196,7 +196,7 @@ body {
   height: 100%;
   width: 30%;
   padding-right: 50px;
-  width: 40%;
+  width: 35%;
   border-right: 1px solid #4b4b4b;
 }
 #page2-left h1 {
@@ -218,11 +218,25 @@ body {
   width: 100%;
   object-fit: cover;
 }
-#page2-left p{
+#page2-left p {
   font-size: 40px;
   font-family: domaine;
+  font-weight: 100;
+  color: #302d2d;
+}
+#page2-left span {
+  font-family: canopee;
+  font-size: 100px;
   font-weight: 100;
 }
 #page2-right {
   height: 100%;
+  width: 80%;
+  padding: 0 50px;
+}
+
+#page2-right img {
+  height: 65%;
+  width: 100%;
+  object-fit: cover;
 }
