@@ -196,7 +196,7 @@ body {
   height: 100%;
   width: 30%;
   padding-right: 50px;
-  width: 35%;
+  width: 40%;
   border-right: 1px solid #4b4b4b;
 }
 #page2-left h1 {
@@ -214,7 +214,7 @@ body {
   font-weight: 600;
 }
 #page2-left img {
-  height: 60%;
+  height: 50%;
   width: 100%;
   object-fit: cover;
 }
