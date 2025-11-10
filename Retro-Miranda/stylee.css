@@ -58,7 +58,7 @@ body {
   text-align: right;
 }
 #elems {
-  /* background-color: cadetblue; */
+  
   height: 430px;
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ body {
 #elem1 {
   width: 30%;
   height: 100%;
-  /* background-color: cornflowerblue; */
+  
 }
 
 #elem2 {
@@ -83,7 +83,7 @@ body {
 #elem3 {
   width: 30%;
   height: 100%;
-  /* background-color: rgb(105, 140, 205); */
+  
 }
 #elem1 #image-div {
   height: 60%;
