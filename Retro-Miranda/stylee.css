@@ -284,7 +284,7 @@ body {
 
 #page4-left {
   height: 100%;
-  width: 60%;
+  width: 70%;
   padding: 80px 40px;
 }
 
@@ -293,21 +293,26 @@ body {
   justify-content: center;
   height: 60%;
   width: 100%;
-  background-color: brown;
 }
 #first-container {
   height: 100%;
-  width: 80%;
-  background-color: yellowgreen;
-  border-left: 2px solid #8e8d8d;
+  width: 50%;
   border-right: 2px solid #8e8d8d;
   padding: 20px 0px;
+  padding-right: 0;
   text-align: left;
+}
+
+#second-container {
+  height: 100%;
+  width: 70%;
+  margin-left: 20px;
+  padding: 20px 40px;
 }
 
 #first-container h2 {
   font-family: canopee;
-  font-size: 75px;
+  font-size: 100px;
   font-weight: 100;
   width: 90%;
 }
@@ -324,4 +329,32 @@ body {
   font-weight: 100;
   color: #363535;
   margin-top: 55px;
+}
+
+#second-container #image-div {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+#second-container h4 {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: canopee;
+  font-weight: 600;
+}
+#second-container h4 span {
+  background-color: #b73c12;
+  color: #fff;
+  font-weight: 100;
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+#second-container p {
+  font-size: 22px;
+  font-family: domaine;
+  font-weight: 100;
+  color: #5f5c5c;
 }
