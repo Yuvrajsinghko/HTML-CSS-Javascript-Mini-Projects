@@ -11,22 +11,21 @@ body {
 }
 @font-face {
   font-family: gilroy;
-  src: url();
+  src: url("./Gilroy-Medium.ttf");
 }
 
-#main{
+#main {
   height: 100vh;
   width: 100%;
   background-color: black;
 }
 
-
-#back{
+#back {
   height: 100vh;
   width: 100%;
   background-color: rgb(49, 171, 165);
 }
-#top{
+#top {
   position: absolute;
   top: 0;
   left: 0;
@@ -34,23 +33,37 @@ body {
   width: 100%;
   background-color: rgb(46, 126, 144);
 }
-#workingarea{
+#workingarea {
   width: 80%;
   margin: 0 auto;
   height: 100vh;
   max-width: 1920px;
-  background-color:darkgoldenrod;
+  background-color: darkgoldenrod;
   border: 1px solid black;
 }
 
-#nav{
+#nav {
   width: 100%;
   padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#nav img{
+#nav img {
   height: 60px;
 }
-#nleft a{
 
+#nleft,
+#nright {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
-
+#nav a {
+  color: #fff;
+  font-family: gilroy;
+  font-size: 18px;
+  font-weight: 600px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
