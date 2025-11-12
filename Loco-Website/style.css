@@ -40,6 +40,7 @@ body {
   max-width: 1920px;
   background-color: darkgoldenrod;
   border: 1px solid black;
+  position: relative;
 }
 
 #nav {
@@ -70,21 +71,24 @@ body {
 
 #hero{
   width: 100%;
-  height: 100px;
-  background-color: aquamarine;
+  
+  position: absolute;
+  top: 50%;
+  left: 0;
   display: flex;
   justify-content: space-between;
+  transform: translate(0% ,-50%);
 }
 
 #heroleft{
   min-width: 50%;
-  height: 100px;
+  
   background-color: coral;
 
 }
 #heroright{
   min-width: 25%;
-  height: 100px;
+  
   background-color: rgb(175, 65, 25);
 
 }
