@@ -42,8 +42,7 @@ body {
   margin: 0 auto;
   height: 100vh;
   max-width: 1920px;
-  background-color: darkgoldenrod;
-  border: 1px solid black;
+
   position: relative;
 }
 
@@ -73,37 +72,48 @@ body {
   text-transform: uppercase;
 }
 
-#hero{
+#hero {
   width: 100%;
-  
+
   position: absolute;
   top: 50%;
   left: 0;
   display: flex;
   justify-content: space-between;
-  transform: translate(0% ,-50%);
+  transform: translate(0%, -50%);
 }
 
-#heroleft{
+#heroleft {
   min-width: 50%;
-  
-  
-
 }
-#heroleft .elem{
+#heroleft .elem {
   height: 9vw;
   overflow: hidden;
 }
-#heroleft .elem h1{
+#heroleft .elem h1 {
   font-family: kaiju;
-  line-height: .9;
+  line-height: 0.9;
   font-weight: 100;
   font-size: 11vw;
   color: #fff;
 }
-#heroright{
-  min-width: 25%;
-  
+#heroleft button{
+  padding: .8vw 3vw;
+  font-size: 3vw;
+  margin-top: 3vw;
+  font-family: kaiju;
+}
+#heroright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 25%;
+  color: #fff;
   background-color: rgb(175, 65, 25);
-
+}
+#heroright p{
+  
+  font-size: 19px;
+  font-weight: 300;
+  text-align: right;
 }
