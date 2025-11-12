@@ -13,6 +13,10 @@ body {
   font-family: gilroy;
   src: url("./Gilroy-Medium.ttf");
 }
+@font-face {
+  font-family: kaiju;
+  src: url("./Kajiro\ Bold.ttf");
+}
 
 #main {
   height: 100vh;
@@ -83,8 +87,19 @@ body {
 #heroleft{
   min-width: 50%;
   
-  background-color: coral;
+  
 
+}
+#heroleft .elem{
+  height: 9vw;
+  overflow: hidden;
+}
+#heroleft .elem h1{
+  font-family: kaiju;
+  line-height: .9;
+  font-weight: 100;
+  font-size: 11vw;
+  color: #fff;
 }
 #heroright{
   min-width: 25%;
