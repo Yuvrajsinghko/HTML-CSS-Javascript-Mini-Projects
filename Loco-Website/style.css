@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: gilroy;
 }
 
 html,
@@ -21,13 +22,19 @@ body {
 #main {
   height: 100vh;
   width: 100%;
-  background-color: black;
+  
 }
 
 #back {
   height: 100vh;
   width: 100%;
-  background-color: rgb(9, 10, 10);
+  
+}
+
+#back img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #top {
   position: absolute;
