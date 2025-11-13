@@ -30,7 +30,11 @@ Shery.imageEffect("#back", {
     antialias_threshold: { value: 0, range: [0, 0.1] },
     noise_height: { value: 0.34, range: [0, 2] },
     noise_scale: { value: 11.45, range: [0, 100] },
-    
   },
   gooey: true,
 });
+
+
+// document.querySelector("#main").addEventListener("click",function(){
+//   alert("Boom");
+// });
