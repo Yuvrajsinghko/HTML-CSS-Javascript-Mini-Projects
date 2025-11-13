@@ -9,4 +9,22 @@ body {
   height: 100%;
   width: 100%;
   color: #FFFFFF;
+  background-color: darkgoldenrod;
+}
+
+.nav{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    padding: 20px 40px;
+    
+}
+
+.nav-left img{
+    height: 85px;
+
+
 }
