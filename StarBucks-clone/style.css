@@ -101,6 +101,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 25px;
+  margin-bottom: 40px;
 }
 
 .green-div p{
@@ -110,9 +111,40 @@ body {
 .green-div button{
   padding: 10px 20px;
   font-family: sodoRegular;
-  font-size: 26px;
+  font-size: 25px;
   border-radius: 25px;
-
+  background-color: transparent;
+  border: 2px solid #fffbfb;
+  color: #fffbfb;
+}
+.green-div button:hover{
+  background-color:#00754A;
 }
 
+.box{
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.box1{
+  height: 800px;
+  width: 100%;
+  background-color: burlywood;
+}
+.box2{
+  height: 800px;
+  width: 100%;
+  background-color: rgb(168, 116, 49);
+}
+.box3{
+  height: 800px;
+  width: 100%;
+  background-color: rgb(65, 29, 155);
+}
+.box4{
+  height: 800px;
+  width: 100%;
+  background-color: rgb(103, 116, 30);
+}
 
