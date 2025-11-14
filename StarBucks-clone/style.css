@@ -12,6 +12,19 @@ body {
   background-color: darkgoldenrod;
 }
 
+@font-face {
+  font-family: sodoBold;
+  src: url("./Assets/Fonts/SoDoSans-Bold.49f6eaa3.ttf");
+}
+@font-face {
+  font-family: sodoRegular;
+  src: url("./Assets/Fonts/SoDoSans-Regular.fb96a065.ttf");
+}
+@font-face {
+  font-family: sodoSemiBold;
+  src: url("./Assets/Fonts/SoDoSans-SemiBold.6aebdeb6.ttf");
+}
+
 .nav{
     height: 120px;
     width: 100%;
@@ -25,8 +38,13 @@ body {
 }
 .nav-left{
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
+}
+
+.nav-left a{
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .nav-left img{
