@@ -9,7 +9,7 @@ body {
   height: 100%;
   width: 100%;
   color: #ffffff;
-  background-color: #ffffff;
+  background-color: #207d74;
 }
 
 @font-face {
@@ -93,6 +93,26 @@ body {
 }
 .nav-right #second:hover{
   background-color:#4C4C4C;
+}
+.green-div{
+  height: 120px;
+  background-color: #32462F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.green-div p{
+  font-size: 25px;
+  font-family: sodoRegular;
+}
+.green-div button{
+  padding: 10px 20px;
+  font-family: sodoRegular;
+  font-size: 26px;
+  border-radius: 25px;
+
 }
 
 
