@@ -54,7 +54,7 @@ body {
 
 .nav-right {
   display: flex;
-  gap: 45px;
+  gap: 70px;
   align-items: center;
   padding: 0 20px;
 }
@@ -63,8 +63,33 @@ body {
 }
 
 .nav-right a{
-  font-size: 22px;
+  font-size: 19px;
   text-decoration: none;
+  color: #222;
+  font-family: sodoRegular;
+}
+.nav-right #first{
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 17px;
+  background-color: #ffffff ;
+  border: 1px solid #222;
+  margin-right: 20px;
+}
+.nav-right #first:hover{
+  background-color:#E5E5E5;
+}
+.nav-right #second{
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 17px;
+  background-color: #222;
+  border:none;
+  color: #ffffff;
+
+}
+.nav-right #second:hover{
+  background-color:#4C4C4C;
 }
 
 
