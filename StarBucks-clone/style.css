@@ -59,44 +59,42 @@ body {
   padding: 0 20px;
   font-family: sodoRegular;
 }
-.nav-right img{
+.nav-right img {
   margin-right: 10px;
 }
 
-.nav-right a{
+.nav-right a {
   font-size: 19px;
   text-decoration: none;
   color: #222;
-  
 }
-.nav-right #first{
+.nav-right #first {
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 17px;
-  background-color: #ffffff ;
+  background-color: #ffffff;
   border: 1px solid #222;
   margin-right: 20px;
   font-family: sodoRegular;
 }
-.nav-right #first:hover{
-  background-color:#E5E5E5;
+.nav-right #first:hover {
+  background-color: #e5e5e5;
 }
-.nav-right #second{
+.nav-right #second {
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 17px;
   background-color: #222;
-  border:none;
+  border: none;
   color: #ffffff;
   font-family: sodoRegular;
-
 }
-.nav-right #second:hover{
-  background-color:#4C4C4C;
+.nav-right #second:hover {
+  background-color: #4c4c4c;
 }
-.green-div{
+.green-div {
   height: 120px;
-  background-color: #32462F;
+  background-color: #32462f;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,11 +102,11 @@ body {
   margin-bottom: 40px;
 }
 
-.green-div p{
+.green-div p {
   font-size: 25px;
   font-family: sodoRegular;
 }
-.green-div button{
+.green-div button {
   padding: 10px 20px;
   font-family: sodoRegular;
   font-size: 25px;
@@ -117,34 +115,70 @@ body {
   border: 2px solid #fffbfb;
   color: #fffbfb;
 }
-.green-div button:hover{
-  background-color:#00754A;
+.green-div button:hover {
+  background-color: #00754a;
 }
 
-.box{
+.box {
   display: flex;
   flex-direction: column;
   gap: 45px;
 }
 
-.box1{
+.box1 {
   height: 800px;
   width: 100%;
-  background-color: burlywood;
+  background-color: #9E0025;
+  display: flex;
 }
-.box2{
+.box1-left {
+  height: 100%;
+  width: 70%;
+}
+.box1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+.box1-right{
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  padding: 40px 50px ;
+  margin: 90px; 
+}
+.box1-right h1{
+  font-size: 66px;
+  letter-spacing: 2px;
+  margin-bottom: 45px;
+  font-family: sodoBold; 
+}
+.box1-right p{
+  font-size: 34px;
+  margin-bottom:55px ;
+  font-family: sodoRegular;
+}
+.box1-right button{
+  background-color: #e5e5e5;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border-style: none;
+}
+
+.box2 {
   height: 800px;
   width: 100%;
   background-color: rgb(168, 116, 49);
 }
-.box3{
+.box3 {
   height: 800px;
   width: 100%;
   background-color: rgb(65, 29, 155);
 }
-.box4{
+.box4 {
   height: 800px;
   width: 100%;
   background-color: rgb(103, 116, 30);
 }
-
