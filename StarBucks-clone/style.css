@@ -172,9 +172,11 @@ body {
 }
 
 .box2 {
-  height: 800px;
+  height: 550px;
   width: 100%;
-  background-color: rgb(168, 116, 49);
+  background-color: #F1F0E4;
+  display: flex;
+  color: #222;
 }
 
 .box3 {
