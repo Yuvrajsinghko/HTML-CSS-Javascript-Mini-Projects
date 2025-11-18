@@ -129,7 +129,7 @@ body {
 .box1 {
   height: 800px;
   width: 100%;
-  background-color: #9E0025;
+  background-color: #9e0025;
   display: flex;
 }
 .box1-left {
@@ -140,43 +140,88 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  
 }
-.box1-right{
+.box1-right {
   height: 100%;
   width: 50%;
   text-align: center;
-  padding: 40px 50px ;
-  margin: 90px; 
+  padding: 40px 50px;
+  margin: 90px;
 }
-.box1-right h1{
+.box1-right h1 {
   font-size: 66px;
   letter-spacing: 2px;
   margin-bottom: 45px;
-  font-family: sodoBold; 
+  font-family: sodoBold;
 }
-.box1-right p{
+.box1-right p {
   font-size: 34px;
-  margin-bottom:55px ;
+  margin-bottom: 55px;
   font-family: sodoRegular;
 }
-.box1-right button{
+.box1-right button {
   background-color: #e5e5e5;
   font-size: 25px;
   padding: 10px 20px;
   border-radius: 25px;
   border-style: none;
 }
-.box1-right button:hover{
-  background-color: #ECCCD3;
+.box1-right button:hover {
+  background-color: #ecccd3;
 }
 
 .box2 {
   height: 550px;
   width: 100%;
-  background-color: #F1F0E4;
+  background-color: #f1f0e4;
   display: flex;
   color: #222;
+}
+.box2-right {
+  height: 100%;
+  width: 70%;
+}
+.box2-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box2-left {
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  padding: 40px 50px;
+  margin: 90px;
+}
+
+.box2-left {
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  padding: 40px 50px;
+  margin: 90px;
+}
+.box2-left h1 {
+  font-size: 66px;
+  letter-spacing: 2px;
+  margin-bottom: 45px;
+  font-family: sodoBold;
+}
+.box2-left p {
+  font-size: 34px;
+  margin-bottom: 55px;
+  font-family: sodoRegular;
+}
+.box2-left button {
+  background-color: #e5e5e5;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border-style: none;
+}
+.box2-left button:hover {
+  background-color: #ecccd3;
 }
 
 .box3 {
@@ -186,7 +231,6 @@ body {
   display: flex;
 }
 
-
 .box3-left {
   height: 100%;
   width: 70%;
@@ -195,35 +239,34 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  
 }
-.box3-right{
+.box3-right {
   height: 100%;
   width: 50%;
   text-align: center;
-  padding: 40px 50px ;
-  margin: 90px; 
+  padding: 40px 50px;
+  margin: 90px;
 }
-.box3-right h1{
+.box3-right h1 {
   font-size: 66px;
   letter-spacing: 2px;
   margin-bottom: 45px;
-  font-family: sodoBold; 
+  font-family: sodoBold;
 }
-.box3-right p{
+.box3-right p {
   font-size: 34px;
-  margin-bottom:55px ;
+  margin-bottom: 55px;
   font-family: sodoRegular;
 }
-.box3-right button{
+.box3-right button {
   background-color: #e5e5e5;
   font-size: 25px;
   padding: 10px 20px;
   border-radius: 25px;
   border-style: none;
 }
-.box3-right button:hover{
-  background-color: #CCE0D9;
+.box3-right button:hover {
+  background-color: #cce0d9;
 }
 
 .box4 {
@@ -232,10 +275,10 @@ body {
   background-color: rgb(103, 116, 30);
 }
 
-.box5{
+.box5 {
   height: 550px;
   width: 100%;
-  background-color: #F1F0E4;
+  background-color: #f1f0e4;
   display: flex;
   color: #222;
 }
@@ -248,31 +291,30 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  
 }
-.box5-right{
+.box5-right {
   height: 100%;
   width: 55%;
   text-align: center;
-  padding: 40px 50px ;
-  margin: 90px; 
+  padding: 40px 50px;
+  margin: 90px;
 }
-.box5-right h1{
+.box5-right h1 {
   font-size: 1.5vw;
   letter-spacing: 2px;
   margin-bottom: 45px;
   font-family: sodoSemiBold;
   font-weight: 100;
 }
-.box5-right p{
+.box5-right p {
   font-size: 3.1vh;
-  margin-bottom:55px ;
+  margin-bottom: 55px;
   line-height: 2vw;
   font-weight: 100;
   font-family: sodoRegular;
 }
-.box5-right button{
-  background-color: #253F37;
+.box5-right button {
+  background-color: #253f37;
   font-size: 20px;
   padding: 10px 20px;
   border-radius: 25px;
@@ -280,7 +322,6 @@ body {
   color: #e5e5e5;
 }
 
-.box5-right button:hover{
-  background-color: #334B43;
+.box5-right button:hover {
+  background-color: #334b43;
 }
-
