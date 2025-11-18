@@ -123,6 +123,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 45px;
+  padding: 0 4vh;
 }
 
 .box1 {
@@ -172,11 +173,55 @@ body {
   width: 100%;
   background-color: rgb(168, 116, 49);
 }
+
 .box3 {
   height: 800px;
   width: 100%;
-  background-color: rgb(65, 29, 155);
+  background-color: #006241;
+  display: flex;
 }
+
+
+.box3-left {
+  height: 100%;
+  width: 70%;
+}
+.box3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+.box3-right{
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  padding: 40px 50px ;
+  margin: 90px; 
+}
+.box3-right h1{
+  font-size: 66px;
+  letter-spacing: 2px;
+  margin-bottom: 45px;
+  font-family: sodoBold; 
+}
+.box3-right p{
+  font-size: 34px;
+  margin-bottom:55px ;
+  font-family: sodoRegular;
+}
+.box3-right button{
+  background-color: #e5e5e5;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border-style: none;
+}
+
+
+
+
+
 .box4 {
   height: 800px;
   width: 100%;
