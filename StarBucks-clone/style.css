@@ -227,5 +227,52 @@ body {
 .box5{
   height: 550px;
   width: 100%;
-  background-color: cyan;
+  background-color: #F1F0E4;
+  display: flex;
+  color: #222;
 }
+
+.box5-left {
+  height: 100%;
+  width: 70%;
+}
+.box5 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+.box5-right{
+  height: 100%;
+  width: 55%;
+  text-align: center;
+  padding: 40px 50px ;
+  margin: 90px; 
+}
+.box5-right h1{
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  margin-bottom: 45px;
+  font-family: sodoSemiBold;
+  font-weight: 100;
+}
+.box5-right p{
+  font-size: 3.1vh;
+  margin-bottom:55px ;
+  line-height: 2vw;
+  font-weight: 100;
+  font-family: sodoRegular;
+}
+.box5-right button{
+  background-color: #253F37;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border-style: none;
+  color: #e5e5e5;
+}
+
+.box5-right button:hover{
+  background-color: #334B43;
+}
+
