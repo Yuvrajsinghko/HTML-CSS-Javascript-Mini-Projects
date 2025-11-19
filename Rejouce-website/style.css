@@ -1,7 +1,17 @@
+@font-face {
+  font-family: susRegular;
+  src: url("./Assets/Fonts/SuisseIntl-Regular.ttf");
+}
+@font-face {
+  font-family: susLight;
+  src: url("./Assets/Fonts/SuisseIntl-Light.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: susRegular;
 }
 
 html,
@@ -10,24 +20,36 @@ body {
   width: 100%;
 }
 
-#page1{
-    height: 100vh;
-    width: 100%;
-    background-color: chocolate;
-    position: relative;
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: chocolate;
+  position: relative;
 }
 
-#page1 video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
+#page1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
 }
-#page1-content{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(188, 143, 143);
-    position: relative;
-    z-index: 2;
-    
+#page1-content {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(188, 143, 143);
+  position: relative;
+  z-index: 2;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: chocolate;
+  padding: 2vw 3vw;
+}
+
+nav h3 {
+  font-size: 1.2vw;
 }
