@@ -173,9 +173,9 @@ body {
 .box2 {
   height: 550px;
   width: 100%;
-  background-color: #f1f0e4;
+  background-color: #AA1D38;
   display: flex;
-  color: #222;
+  color:#e5e5e5;
 }
 .box2-right {
   height: 100%;
@@ -194,34 +194,31 @@ body {
   padding: 40px 50px;
   margin: 90px;
 }
-
-.box2-left {
-  height: 100%;
-  width: 50%;
-  text-align: center;
-  padding: 40px 50px;
-  margin: 90px;
-}
 .box2-left h1 {
-  font-size: 66px;
+  font-size: 1.5vw;
   letter-spacing: 2px;
   margin-bottom: 45px;
-  font-family: sodoBold;
+  font-family: sodoSemiBold;
+  font-weight: 100;
 }
+
 .box2-left p {
-  font-size: 34px;
+  font-size: 3.1vh;
   margin-bottom: 55px;
+  line-height: 2vw;
+  font-weight: 100;
   font-family: sodoRegular;
 }
 .box2-left button {
-  background-color: #e5e5e5;
-  font-size: 25px;
+  background-color: transparent;
+  font-size: 20px;
   padding: 10px 20px;
+  border: 1px solid #e5e5e5;
   border-radius: 25px;
-  border-style: none;
+  
 }
 .box2-left button:hover {
-  background-color: #ecccd3;
+  background-color: #88172D;
 }
 
 .box3 {
