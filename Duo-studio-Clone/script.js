@@ -67,11 +67,18 @@ tl.to(
   "anim"
 );
 
-tl.from(
+tl.to(
   ".page1 p",
   {
     opacity: 0,
-    y: 110,
+    y: 80,
+  },
+  "anim"
+);
+tl.to(
+  ".page1 video",
+  {
+    width:"90%"
   },
   "anim"
 );

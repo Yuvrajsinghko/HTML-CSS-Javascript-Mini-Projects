@@ -82,7 +82,7 @@ body {
   margin-top: 2vw;
   text-align: center;
   font-family: susBook;
-  font-size: 2.5vh;
+  font-size: 2.9vh;
   width: 50%;
 
   margin-left: 25vw;
@@ -90,6 +90,9 @@ body {
 
 .page1 video{
     width: 60%;
-    margin-left: 20%;
     margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    
 }
