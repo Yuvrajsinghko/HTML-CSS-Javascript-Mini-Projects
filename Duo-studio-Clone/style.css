@@ -3,10 +3,56 @@
   padding: 0;
   box-sizing: border-box;
   font-family: gilroy;
+  color: white;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+}
+
+.main {
+  background-color: #0f0d0d;
+}
+
+.page1 {
+  height: 100vh;
+  width: 100%;
+}
+
+#nav {
+  height: 65px;
+  width: 100%;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+#nav img {
+  height: 30px;
+}
+
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#nav #circle {
+  height: 1.2vw;
+  width: 1.2vw;
+  background-color: darkorange;
+  border-radius: 50%;
+}
+
+#nav h4 {
+  font-size: 21px;
+  font-weight: 100;
+}
+
+#nav h4:nth-child(1){
+    border-bottom: 2px solid white ;
+    
 }
