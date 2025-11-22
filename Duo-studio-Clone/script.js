@@ -37,3 +37,41 @@ function init() {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
 }
+
+init();
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".page1 h1",
+    scroller: ".main",
+    markers: true,
+    start: "top 27%",
+    end: "top 0",
+    scrub: 3,
+  },
+});
+
+tl.to(
+  ".page1 h1",
+  {
+    x: -200,
+  },
+  "anim"
+);
+
+tl.to(
+  ".page1 h2",
+  {
+    x: 200,
+  },
+  "anim"
+);
+
+tl.from(
+  ".page1 p",
+  {
+    opacity: 0,
+    y: 110,
+  },
+  "anim"
+);
