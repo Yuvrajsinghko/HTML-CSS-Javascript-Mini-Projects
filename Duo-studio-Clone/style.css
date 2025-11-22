@@ -11,20 +11,28 @@ body {
   height: 100%;
   width: 100%;
 }
+@font-face {
+  font-family: susBook;
+  src: url("./Assets/Fonts/SuisseIntl-Book-WebXL.ttf");
+}
+@font-face {
+  font-family: PPregular;
+  src: url("./Assets/Fonts/PPMori-Regular.ttf");
+}
 
 .main {
   background-color: #0f0d0d;
 }
 
 .page1 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
 #nav {
   height: 65px;
   width: 100%;
-  background-color: cadetblue;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,7 +46,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 8px;
 }
 #nav #circle {
   height: 1.2vw;
@@ -48,11 +56,40 @@ body {
 }
 
 #nav h4 {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 100;
+  font-family: susBook;
 }
 
-#nav h4:nth-child(1){
-    border-bottom: 2px solid white ;
-    
+#nav h4:nth-child(1) {
+  border-bottom: 2px solid white;
+}
+
+.page1 h1 {
+  font-size: 7vw;
+  font-family: PPregular;
+  font-weight: 400;
+  margin-top: 11vw;
+  text-align: center;
+}
+.page1 h2 {
+  font-size: 7vw;
+  font-family: PPregular;
+  font-weight: 400;
+  text-align: center;
+}
+.page1 p {
+  margin-top: 2vw;
+  text-align: center;
+  font-family: susBook;
+  font-size: 2.5vh;
+  width: 50%;
+
+  margin-left: 25vw;
+}
+
+.page1 video{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10vw;
 }
