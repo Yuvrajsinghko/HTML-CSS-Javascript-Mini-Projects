@@ -96,3 +96,13 @@ body {
     transform: translate(-50%,0);
     
 }
+
+.page2{
+  min-height: 100vh;
+  width: 100%;
+  background-color: darkgoldenrod;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12vw;
+  padding: 0 4.8vw;
+}
