@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- font-family: susRegular;
+  font-family: susRegular;
 }
 
 html,
@@ -64,7 +64,8 @@ nav h4{
 
 #page1-content h1{
     font-family: susRegular;
-    font-size: 25vw;
+    font-size: 24vw;
+    line-height: 24vw;
 }
 
 
