@@ -138,29 +138,28 @@ body {
   object-fit: cover;
   scale: 1.2;
 }
-.dets{
+.dets {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1vw 2vw;
-  
 }
-.dets .circle{
+.dets .circle {
   height: 1vh;
   width: 1vh;
   background-color: #000;
   border-radius: 50%;
 }
-.dets i{
+.dets i {
   font-size: 1.5vw;
 }
-.dets a{
+.dets a {
   text-decoration: none;
   color: #000;
   font-size: 1vw;
   font-family: helnow;
 }
-.dets span{
+.dets span {
   font-weight: 900;
 }
 .elem .dets {
@@ -182,7 +181,6 @@ body {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-
 }
 .child {
   height: 85vh;
@@ -196,61 +194,101 @@ body {
 .child img {
   height: 100%;
   object-fit: cover;
-  
 }
-.box{
+.box {
   height: 100%;
   text-align: center;
-  font-family: helnow; 
-  
+  font-family: helnow;
 }
 
-#page4{
+#page4 {
   min-height: 20vh;
-  width: 100%; 
+  width: 100%;
   padding: 0 0.7vw;
 }
-#page4 .up{
+#page4 .up {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.63);
-  
 }
-#page4 .up h3{
+#page4 .up h3 {
   font-size: 1.8vh;
   font-family: helnow;
   font-weight: 100;
 }
 
-#page4 .down{
+#page4 .down {
   display: flex;
   justify-content: space-between;
   padding: 0 1vw;
-  
 }
-.card{
+.card {
   display: flex;
   flex-direction: column;
   gap: 1vw;
 }
-.card .c1{
+.card .c1 {
   height: 2vh;
   width: 2vh;
-  border:1px solid #000;
+  border: 1px solid #000;
   background-color: transparent;
   border-radius: 50%;
 }
-.card button{
+.card button {
   font-size: 1.8vw;
   border: none;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   font-family: helnow;
   font-weight: 100;
 }
 
+.page4-text {
+  margin-top: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page4-text h1 {
+  font-size: 5.5vw;
+  font-family: futura;
+  font-weight: 500;
+}
 
+.page4-text button {
+  margin-top: 6vw;
+  background-color: #000;
+  padding: 1.6vw 4vw;
+  font-size: 2.1vh;
+  color: #f7f7f7;
+  border-radius: 50px;
+}
+.page4-text p{
+  font-size: 3vh;
+  margin-top: 2vw;
+}
 
+.page5{
+  min-height: 120vh;
+  width: 100%;
+  margin-top: 6vw;
+  display: flex;
+  padding: 2vw 1vw;
+  gap: 20px;
+
+}
+.page5-left{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+.page5-left h1{
+  font-family: futura;
+  font-weight: 500;
+}
 
 @media (max-width: 600px) {
   #nav {
