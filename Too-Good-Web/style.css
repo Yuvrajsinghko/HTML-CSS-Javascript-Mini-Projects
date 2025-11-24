@@ -23,7 +23,15 @@ body {
   font-family: helnow;
   src: url("./Assets/Fonts/HelveticaNowText-Regular.ttf");
 }
-
+#cursor{
+  height:255px;
+  width: 255px;
+  background-color: rgba(255, 140, 0, 0.342);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%,-50%) scale(0);
+  
+}
 #page1 {
   min-height: 100vh;
   width: 100%;
@@ -60,6 +68,7 @@ body {
   border-radius: 50%;
   opacity: 0;
   scale: 0;
+  
 }
 #page2 {
   min-height: 130vh;
@@ -103,7 +112,25 @@ body {
   min-height: 120vh;
   width: 100%;
   position: relative;
-  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.child{
+  height: 85vh;
+  width: 47vw;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 8.5vw;
+}
+.child img{
+  height: 100%;
+  
+  object-fit: cover;
 }
 
 @media (max-width: 600px) {
