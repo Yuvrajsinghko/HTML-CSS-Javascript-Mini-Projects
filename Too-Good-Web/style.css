@@ -13,7 +13,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: #F7F7F7;
 }
 @font-face {
   font-family: futura;
@@ -75,8 +75,11 @@ body {
 #page2 .elem {
   height: 100%;
   width: 32%;
-
+  position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #page2 .elem img {
@@ -85,6 +88,17 @@ body {
   object-fit: cover;
   scale: 1.2;
 }
+.elem .dets {
+  height: 60px;
+  width: 70%;
+  background-color: #dcc0b4;
+  position: absolute;
+  z-index: 99;
+  border-radius: 25px;
+}
+/* .elem .dets:hover{
+  height: 200px;
+} */
 #page3 {
   min-height: 120vh;
   width: 100%;
@@ -146,5 +160,13 @@ body {
     width: 100%;
     object-fit: cover;
     scale: 1.1;
+  }
+  .elem .dets {
+    height: 60px;
+    width: 70%;
+    background-color: #dcc0b4;
+    position: absolute;
+    z-index: 99;
+    border-radius: 25px;
   }
 }
