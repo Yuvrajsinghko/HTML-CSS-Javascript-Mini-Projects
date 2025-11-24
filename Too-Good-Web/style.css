@@ -206,9 +206,8 @@ body {
 }
 
 #page4{
-  height: 20vh;
-  width: 100%;
-  background-color: burlywood;
+  min-height: 20vh;
+  width: 100%; 
   padding: 0 0.7vw;
 }
 #page4 .up{
@@ -216,10 +215,36 @@ body {
   justify-content: space-between;
   margin-bottom: 3vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.63);
-  /* font-family: helnow; */
+  
 }
 #page4 .up h3{
   font-size: 1.8vh;
+  font-family: helnow;
+  font-weight: 100;
+}
+
+#page4 .down{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1vw;
+  
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.card .c1{
+  height: 2vh;
+  width: 2vh;
+  border:1px solid #000;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.card button{
+  font-size: 1.8vw;
+  border: none;
+  background-color: #F7F7F7;
   font-family: helnow;
   font-weight: 100;
 }
