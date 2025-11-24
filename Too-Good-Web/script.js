@@ -42,10 +42,22 @@ locomotiveAnimation();
 function navAnimation() {
   gsap.to("#nav-part1 svg", {
     transform: "translateY(-100%)",
+    duration:0.2,
     scrollTrigger: {
       trigger: "#page1",
       scroller: "#main",
-      markers: true,
+      start: "top 0",
+      end: "top -5%",
+      scrub: 1.5,
+    },
+  });
+
+  gsap.to("#nav-part2 #links", {
+    transform: "translateY(-100%)",
+    opacity:0,
+    scrollTrigger: {
+      trigger: "#page1",
+      scroller: "#main",
       start: "top 0",
       end: "top -5%",
       scrub: 1,
