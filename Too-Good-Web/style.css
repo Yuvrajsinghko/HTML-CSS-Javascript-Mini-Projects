@@ -310,6 +310,31 @@ body {
   height: 100%;
 }
 
+.page6{
+  height: 130vh;
+  width: 100%;
+  background-color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1vw;
+  margin-top: 5vw;
+  
+}
+
+.page6 h1{
+  font-family: futura;
+  font-weight: 100;
+  font-size: 2.5vw;
+  border-bottom: 1px solid #0000003d;
+}
+
+.page6 .middle-content{
+  margin-top: 13vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 @media (max-width: 600px) {
   #nav {
