@@ -334,6 +334,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.middle-content dt{
+  margin-bottom: 1.5vw;
+  color: #00000049;
+
+}
+.middle-content dd{
+  margin-bottom: 1vh;
+  font-family: helnow;
+  text-align: center;
+}
 .middle-content .mid-svg{
   display: flex;
   flex-direction: column;
