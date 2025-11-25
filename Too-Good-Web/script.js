@@ -40,10 +40,9 @@ function locomotiveAnimation() {
 locomotiveAnimation();
 
 function navAnimation() {
-  const tl = gsap.timeline();
   gsap.to("#nav-part1 svg", {
     transform: "translateY(-100%)",
-    duration:0.2,
+    duration: 0.2,
     scrollTrigger: {
       trigger: "#page1",
       scroller: "#main",
@@ -55,7 +54,7 @@ function navAnimation() {
 
   gsap.to("#nav-part2 #links", {
     transform: "translateY(-100%)",
-    opacity:0,
+    opacity: 0,
     scrollTrigger: {
       trigger: "#page1",
       scroller: "#main",
@@ -64,21 +63,17 @@ function navAnimation() {
       scrub: 1,
     },
   });
-  tl.from("#nav-part1 svg",{
+  gsap.from("#nav-part1 svg", {
     transform: "translateY(100%)",
-    duration:0.2,
+    duration: 0.2,
     scrollTrigger: {
       trigger: ".page6",
       scroller: "#main",
-      markers:true,
       start: "top 0",
       end: "top -5%",
       scrub: 1.5,
-    }
-
-  })
-  
-  
+    },
+  });
 }
 
 navAnimation();
@@ -154,3 +149,36 @@ function cursorAnimation() {
   });
 }
 cursorAnimation();
+
+function textAnimation() {
+  const tl = gsap.timeline();
+  tl.from("#page4", {
+    y: 100,
+    opacity: 0,
+    delay: 1.3,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: "#page4",
+      scroller: "#main",
+      scrub: 1.5,
+      start: "top 40%",
+      end: "top 0",
+    }
+  
+  });
+  tl.from(".page5",{
+    y: 100,
+    opacity: 0,
+    delay: 1.3,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: ".page5",
+      scroller: "#main",
+      scrub: 1.5,
+      start: "top 40%",
+      end: "top 0"
+    }
+  });
+}
+
+textAnimation();
