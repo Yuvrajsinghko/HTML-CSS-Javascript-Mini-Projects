@@ -155,7 +155,7 @@ function textAnimation() {
   tl.from("#page4", {
     y: 100,
     opacity: 0,
-    delay: 1.3,
+
     duration: 0.5,
     scrollTrigger: {
       trigger: "#page4",
@@ -163,22 +163,43 @@ function textAnimation() {
       scrub: 1.5,
       start: "top 40%",
       end: "top 0",
-    }
-  
+    },
   });
-  tl.from(".page5",{
+  tl.from(".page5", {
     y: 100,
     opacity: 0,
-    delay: 1.3,
+
     duration: 0.5,
     scrollTrigger: {
       trigger: ".page5",
       scroller: "#main",
       scrub: 1.5,
       start: "top 40%",
-      end: "top 0"
-    }
+      end: "top 0",
+    },
   });
 }
 
 textAnimation();
+
+function footerAnimation() {
+  // let sv=document.querySelectorAll(".middle-content .mid-svg svg");
+  // sv.forEach((value,index) =>{
+  //   `<span>${value}</span>`
+  // })
+  const am = gsap.timeline();
+  am.from(".page6 svg", {
+    y: 100,
+    opacity: 0,
+    
+    scrollTrigger: {
+      trigger: "#page6 .mid-svg svg",
+      scroller: "#main",
+      scrub: 1.5,
+      start: "top 40%",
+      end: "top 0",
+    },
+  });
+}
+
+// footerAnimation();
