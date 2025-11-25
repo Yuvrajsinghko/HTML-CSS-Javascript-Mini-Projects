@@ -40,6 +40,7 @@ function locomotiveAnimation() {
 locomotiveAnimation();
 
 function navAnimation() {
+  const tl = gsap.timeline();
   gsap.to("#nav-part1 svg", {
     transform: "translateY(-100%)",
     duration:0.2,
@@ -63,6 +64,21 @@ function navAnimation() {
       scrub: 1,
     },
   });
+  tl.from("#nav-part1 svg",{
+    transform: "translateY(100%)",
+    duration:0.2,
+    scrollTrigger: {
+      trigger: ".page6",
+      scroller: "#main",
+      markers:true,
+      start: "top 0",
+      end: "top -5%",
+      scrub: 1.5,
+    }
+
+  })
+  
+  
 }
 
 navAnimation();
