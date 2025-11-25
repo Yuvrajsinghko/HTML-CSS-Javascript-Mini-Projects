@@ -311,13 +311,13 @@ body {
 }
 
 .page6{
-  height: 130vh;
+  height: 120vh;
   width: 100%;
-  background-color: darkcyan;
   display: flex;
   flex-direction: column;
   padding: 0 1vw;
   margin-top: 5vw;
+  position: relative;
   
 }
 
@@ -333,6 +333,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.middle-content .mid-svg{
+  display: flex;
+  flex-direction: column;
+  gap: 2.4vw;
+  align-items: center;
+}
+.mid-svg .links a{
+  margin-right: 1vw;
+  text-decoration: none;
+  color: #000;
+  font-size: 2.1vh;
+}
+
+.page6 p{
+  margin-top: 14vw;
+  position: absolute;
+  text-align: center;
+  font-size: 1vw;
+  width: 60%;
+  line-height: 1.5vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
 }
 
 
