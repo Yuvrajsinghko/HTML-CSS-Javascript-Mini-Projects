@@ -9,7 +9,7 @@ body {
   height: 100%;
   width: 100%;
   color: #ffffff;
-  background-color: #207d74;
+  /* background-color: #207d74; */
 }
 
 @font-face {
@@ -155,7 +155,7 @@ body {
   font-family: sodoBold;
 }
 .box1-right p {
-  font-size: 34px;
+  font-size: 26px;
   margin-bottom: 55px;
   font-family: sodoRegular;
 }
