@@ -63,17 +63,7 @@ function navAnimation() {
       scrub: 1,
     },
   });
-  gsap.from("#nav-part1 svg", {
-    transform: "translateY(100%)",
-    duration: 0.2,
-    scrollTrigger: {
-      trigger: ".page6",
-      scroller: "#main",
-      start: "top 0",
-      end: "top -5%",
-      scrub: 1.5,
-    },
-  });
+  
 }
 
 navAnimation();
@@ -202,4 +192,4 @@ function footerAnimation() {
   });
 }
 
-// footerAnimation();
+footerAnimation();
