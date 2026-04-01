@@ -119,7 +119,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  background-color: #ffb400;
   width: 400px;
   height: 600px;
 }
@@ -128,6 +127,20 @@ body {
   height: 85%;
   width: 100%;
   object-fit: cover;
+}
+.showcase p {
+  font-size: 20px;
+}
+
+.events{
+  margin-top: 10vw;
+  min-height: 100vh;
+  background-color: #ffb400;
+  
+}
+
+.events h2{
+
 }
 
 
