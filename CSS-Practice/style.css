@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    color: aqua;
+
+}
+.block{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(123, 18, 56);
+    top: -40px;   
+}
