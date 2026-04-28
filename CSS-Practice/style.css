@@ -48,3 +48,10 @@ body{
     inset: 0 0 auto 0;
     z-index: 10;
 }
+
+.sticky{
+    background-color: darkmagenta;
+    padding: 40px 20px;
+    position: sticky;
+    bottom: 0;
+}
