@@ -7,13 +7,16 @@ div{
 }
 
 .parent{
-    background-color: rgb(10, 41, 30);
+    background-color: rgb(144, 144, 27);
     display: flex;
+    gap: 20px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
     
+
 }
 
-.child{
-    
+.child{ 
     background-color: brown;
 }
 
