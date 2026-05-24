@@ -127,7 +127,7 @@ body {
 }
 
 .box1 {
-  height: 800px;
+  height: 550px;
   width: 100%;
   background-color: #9e0025;
   display: flex;
@@ -149,19 +149,19 @@ body {
   margin: 90px;
 }
 .box1-right h1 {
-  font-size: 66px;
+  font-size: 1.5vw;
   letter-spacing: 2px;
   margin-bottom: 45px;
   font-family: sodoBold;
 }
 .box1-right p {
-  font-size: 26px;
+  font-size: 3.1vh;
   margin-bottom: 55px;
   font-family: sodoRegular;
 }
 .box1-right button {
   background-color: #e5e5e5;
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px 20px;
   border-radius: 25px;
   border-style: none;
@@ -192,7 +192,7 @@ body {
   width: 50%;
   text-align: center;
   padding: 40px 50px;
-  margin: 90px;
+  margin: 60px;
 }
 .box2-left h1 {
   font-size: 1.5vw;
@@ -222,7 +222,7 @@ body {
 }
 
 .box3 {
-  height: 800px;
+  height: 550px;
   width: 100%;
   background-color: #006241;
   display: flex;
@@ -241,23 +241,23 @@ body {
   height: 100%;
   width: 50%;
   text-align: center;
-  padding: 40px 50px;
-  margin: 90px;
+  padding: 70px 50px;
+  margin: 40px;
 }
 .box3-right h1 {
-  font-size: 66px;
+  font-size: 1.5vw;
   letter-spacing: 2px;
   margin-bottom: 45px;
   font-family: sodoBold;
 }
 .box3-right p {
-  font-size: 34px;
+  font-size: 3.1vh;
   margin-bottom: 55px;
   font-family: sodoRegular;
 }
 .box3-right button {
   background-color: #e5e5e5;
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px 20px;
   border-radius: 25px;
   border-style: none;
@@ -267,9 +267,56 @@ body {
 }
 
 .box4 {
-  height: 800px;
+  height: 400px;
   width: 100%;
-  background-color: rgb(103, 116, 30);
+  display: flex;
+  background-color: #F5F1EB;
+
+}
+.box4-left{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 5px 50px;
+  margin: 90px;
+  
+}
+.box4-left h1 {
+  color: #006241;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  margin-bottom: 45px;
+  font-family: sodoSemiBold;
+  font-weight: 100;
+}
+.box4-left p {
+  color: #006241;
+  font-size: 3.1vh;
+  margin-bottom: 50px;
+  line-height: 2vw;
+  font-weight: 100;
+  font-family: sodoRegular;
+}
+.box4-left button {
+  background-color: #006241;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border-style: none;
+  color: #e5e5e5;
+}
+
+.box4-left button:hover {
+  background-color: #334b43;
+}
+.box4-right{
+  width: 50%;
+  height: 100%;
+}
+.box4-right img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .box5 {
