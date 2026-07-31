@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #010101;
+}
+
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(68, 112, 112);
+    transition: background-color 0.4s ease-out,scale 0.6s ease-out;
+    overflow: hidden;
+}
+
+.box img{
+    height: 100%;
+    width:100%;
+    transition:scale 0.6s ease-out;
+}
+
+.box:hover img{
+    scale:1.3
+}
