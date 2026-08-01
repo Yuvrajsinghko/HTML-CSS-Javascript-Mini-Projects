@@ -53,7 +53,10 @@ p {
   gap: 8vw;
   font-size: 1.1vw;
   color: aliceblue;
+  padding: 15px 20px;
+  border-radius: 25px;
   z-index: 10;
+  border: 2px solid rgba(240, 248, 255, 0.165);
 }
 
 .main-content {
@@ -69,18 +72,22 @@ p {
 }
 .main-content h1 {
   font-size: 12vw;
-  color: aliceblue;
+  color: aliceblue; 
   letter-spacing: 0.8vw;
   text-transform: uppercase;
 }
 .box-content p {
-  border: 5px solid rgb(242, 234, 234);
+  border: 5px solid rgb(242, 234, 234,0.4);
   height: 100%;
   font-size: 1.5vw;
-  color: aliceblue;
   text-transform: uppercase;
   letter-spacing: 0.6vw;
   line-height: 5vh;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.4);
   padding: 25px 20px;
   border-radius: 20px;
   text-align: center;
@@ -99,72 +106,93 @@ a:hover {
   border-radius: 20px;
 }
 
-.showcase{
-    height: 100vh;
-    width: 100%;
-    position: relative;
+.showcase {
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
-.showcase img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.showcase img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.showcase-content{
-    z-index: 10;
+.showcase-content {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2vw;
+}
+.showcase-content h2 {
+  font-size: 5vw;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.showcase-content h3 {
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+.showcase-content p {
+  width: 90%;
+  text-align: center;
+}
+.showcase-content button {
+  padding: 10px 15px;
+  font-size: small;
+  font-weight: 700;
+  background-color: black;
+  color: azure;
+  outline: none;
+  letter-spacing: 1px;
+  border-radius: 20px;
+}
+
+.showcase-img {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+}
+.box {
+  height: 30vh;
+  width: 40vh;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+.box .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.28);
+    z-index: 2;
+}
+.box .overlay-text h3{
     position: absolute;
     top: 50%;
     left: 50%;
+    color: aliceblue;
     transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5vw;
-}
-.showcase-content h2{
-    font-size: 5vw;
-    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 35px;
+    z-index: 20;
 }
 
-.showcase-content h3{
-    font-size: 2vw;
-    text-transform: uppercase;
+.box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
 }
-.showcase-content p{
-    width: 90%;
-    text-align: center;
+.box:hover img {
+  transform: scale(1.2);
 }
-.showcase-content button{
-    padding: 10px 15px;
-    font-size: small;
-    font-weight: 700;
-    background-color: black;
-    color: azure;
-    outline: none;
-    letter-spacing: 1px;
-    border-radius: 20px;
-}
-
-.showcase-img{
-    display: flex;
-    justify-content: space-around;
-    gap: 25px;
-}
-.box{
-    height: 30vh;
-    width: 40vh;
-    overflow: hidden;
-    
-}
-
-.box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: transform 0.8s ease;
-
-}
-.box:hover img{
-    transform: scale(1.2);
-}
-
