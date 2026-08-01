@@ -100,7 +100,7 @@ a:hover {
 }
 
 .showcase{
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     position: relative;
 }
@@ -109,3 +109,62 @@ a:hover {
     width: 100%;
     object-fit: cover;
 }
+
+.showcase-content{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw;
+}
+.showcase-content h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+
+.showcase-content h3{
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+.showcase-content p{
+    width: 90%;
+    text-align: center;
+}
+.showcase-content button{
+    padding: 10px 15px;
+    font-size: small;
+    font-weight: 700;
+    background-color: black;
+    color: azure;
+    outline: none;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+
+.showcase-img{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+.box{
+    height: 30vh;
+    width: 40vh;
+    overflow: hidden;
+    
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+
+}
+.box:hover img{
+    transform: scale(1.2);
+}
+
