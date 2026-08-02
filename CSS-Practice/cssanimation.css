@@ -8,51 +8,72 @@ body {
   background-color: #010101;
 }
 
-.box {
-  margin-left: 20px;
-  margin-bottom: 2rem;
-  height: 300px;
-  width: 300px;
-  background-color: rgb(68, 112, 112);
-  overflow: hidden;
-  animation: boom 4s  ease-out;
+.crousel-scene{
+    height: 100vh;
+    width: 100%;
+    perspective: 1300px;
+    overflow: hidden;
+
 }
 
-@keyframes pulse {
-  0% {
-    scale: 1;
-  }
-  20% {
-    scale: 1.2;
-    background-color: brown;
-  }
-  50% {
-    scale: 1.6;
-    background-color: rgb(67, 42, 165);
-  }
-  70% {
-    scale: 1.9;
-    background-color: rgb(165, 42, 85);
-  }
-  100% {
-    scale: 2.2;
-    background-color: rgb(201, 231, 30);
-    transform: translateX(150px);
-  }
+.crousel{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 8s linear infinite;
 }
 
-@keyframes boom {
-  from {
-    scale: 1;
-  }
-  to {
-    background-color: rgb(201, 231, 30);
-    transform: translateX(160px);
-  }
+.crousel-items{
+    height: 40%;
+    width: 18%;
+    position: absolute;
+    /* backface-visibility: hidden; */
 }
 
-.box:nth-child(1) { animation-delay: 0.05s; }
-.box:nth-child(2) { animation-delay: 0.15s; }
-.box:nth-child(3) { animation-delay: 0.25s; }
-.box:nth-child(4) { animation-delay: 0.35s; }
-.box:nth-child(5) { animation-delay: 0.45s; }
+.crousel-items img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.crousel:hover{
+    animation-play-state: paused;
+}
+
+.crousel-items:nth-child(1){
+    transform: rotateY(0deg) translateZ(400px);
+}
+.crousel-items:nth-child(2){
+    transform: rotateY(45deg) translateZ(400px);
+}
+.crousel-items:nth-child(3){
+    transform: rotateY(90deg) translateZ(400px);
+}
+.crousel-items:nth-child(4){
+    transform: rotateY(135deg) translateZ(400px);
+}
+.crousel-items:nth-child(5){
+    transform: rotateY(180deg) translateZ(400px);
+}
+.crousel-items:nth-child(6){
+    transform: rotateY(225deg) translateZ(400px);
+}
+.crousel-items:nth-child(7){
+    transform: rotateY(270deg) translateZ(400px);
+}
+.crousel-items:nth-child(8){
+    transform: rotateY(315deg) translateZ(400px);
+}
+
+@keyframes spin{
+    from{
+        transform: rotateY(0) scale(1);
+    }
+    to{
+        transform: rotateY(-360deg) scale(1.2);
+    }
+
+}
