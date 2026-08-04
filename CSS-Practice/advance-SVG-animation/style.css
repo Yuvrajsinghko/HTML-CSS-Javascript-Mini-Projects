@@ -7,6 +7,8 @@ body {
   background-color: black;
 }
 
+/* The gooey effect CSS */
+
 .goo-wrap {
   filter: url(#goo);
   width: 200px;
@@ -32,3 +34,14 @@ body {
     transform: translateX(100px);
   }
 }
+
+.goo-text{
+ color: aquamarine;
+ font-size: 4rem;
+}
+
+
+/* Liquid/Wavy Distortion Text */
+
+
+
