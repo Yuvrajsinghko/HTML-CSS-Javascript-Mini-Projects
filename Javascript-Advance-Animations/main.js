@@ -43,6 +43,7 @@ animate();
 
 const title = document.getElementById("hero-title");
 
+if (title) {
 // split each word into one <span class="ch"> per character
 title.querySelectorAll(".word").forEach((word) => {
   const text = word.textContent;
@@ -96,3 +97,81 @@ function animate2() {
   requestAnimationFrame(animate2);
 }
 animate2();
+}
+
+
+// image trail effect
+
+const zone = document.querySelector("[data-trail-zone]");
+const layer = document.getElementById("trail-layer");
+
+const images = [
+  "https://images.unsplash.com/photo-1785780224408-57cfbb7fe70c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1785819338932-c8b4387b2b9a?q=80&w=1638&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1768541089409-7d3c0bc386eb?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1770064319727-7a5361023791?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+];
+
+// pre-create a fixed pool of elements and reuse them —
+// cheaper than creating a new <img> on every mousemove
+if (zone && layer) {
+const POOL_SIZE = 8;
+const pool = [];
+for (let i = 0; i < POOL_SIZE; i++) {
+  const el = document.createElement("div");
+  el.className = "trail-item";
+  const img = document.createElement("img");
+  img.src = images[i % images.length];
+  el.appendChild(img);
+  layer.appendChild(el);
+  pool.push(el);
+}
+
+let poolIndex = 0;
+let trailLastX = null,
+  trailLastY = null;
+let inside = false;
+
+zone.addEventListener("mouseenter", () => {
+  inside = true;
+});
+zone.addEventListener("mouseleave", () => {
+  inside = false;
+  trailLastX = null;
+  trailLastY = null;
+});
+
+window.addEventListener("mousemove", (e) => {
+  if (!inside) return;
+  if (trailLastX === null) {
+    trailLastX = e.clientX;
+    trailLastY = e.clientY;
+  }
+
+  // only spawn once the cursor has moved far enough — keeps the trail spaced out
+  if (dist(e.clientX, e.clientY, trailLastX, trailLastY) < 70) return;
+  trailLastX = e.clientX;
+  trailLastY = e.clientY;
+
+  const el = pool[poolIndex % POOL_SIZE];
+  poolIndex++;
+  const rot = (Math.random() * 16 - 8).toFixed(1);
+
+  el.classList.remove("show");
+  el.style.transition = "none";
+  el.style.transform = `translate3d(${e.clientX - 75}px, ${e.clientY - 95}px, 0) scale(.6) rotate(${rot}deg)`;
+  void el.offsetWidth; // force reflow so the transition restarts cleanly
+
+  el.style.transition = "";
+  requestAnimationFrame(() => {
+    el.classList.add("show");
+    el.style.transform = `translate3d(${e.clientX - 75}px, ${e.clientY - 95}px, 0) scale(1) rotate(${rot}deg)`;
+  });
+
+  clearTimeout(el._hideTimer);
+  el._hideTimer = setTimeout(() => {
+    el.classList.remove("show");
+    el.style.transform += " scale(0.8)";
+  }, 820);
+});
+}
