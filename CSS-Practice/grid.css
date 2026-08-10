@@ -1,17 +1,113 @@
+/* GLOBAL/UI STYLES */
+
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-color: black;
-}
-div {
-  padding: 20px;
+  padding: 24px 28px 24px 20px;
+  background-color: hsl(251, 53%, 9%);
+  color: hsl(0, 0%, 95%);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.06em;
 }
 
-.grid-parent {
+h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.block {
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 2px;
+  padding: 15px 15px 22px;
+  color: var(--color);
+  border-color: var(--color);
+  box-shadow: 8px 8px 0 var(--color-shadow, hsla(0, 100%, 100%, 0.4));
+}
+
+.purple {
+  --color: hsl(241, 100%, 70%);
+  --color-shadow: hsla(241, 100%, 70%, 0.4);
+}
+
+.pink {
+  --color: hsl(306, 90%, 73%);
+  --color-shadow: hsla(306, 90%, 40%, 0.4);
+}
+
+.yellow {
+  --color: hsl(64, 90%, 56%);
+  --color-shadow: hsla(64, 100%, 40%, 0.4);
+}
+
+.blue {
+  --color: hsl(188, 100%, 76%);
+  --color-shadow: hsla(188, 100%, 40%, 0.4);
+}
+
+.green {
+  --color: hsl(120, 100%, 50%);
+  --color-shadow: hsla(120, 100%, 40%, 0.4);
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-areas:
+    "html"
+    "css"
+    "js"
+    "vs"
+    "uv";
+
+  @media (width>=40rem) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "html css"
+      "js css"
+      "js vs"
+      "uv uv";
+  }
+
+  @media (width>=50rem) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "html css js js"
+      "html css js js"
+      "html css vs vs"
+      "html uv uv uv";
+  }
+}
+
+.block1 {
+  grid-area: html;
+}
+.block2 {
+  grid-area: css;
+}
+
+.block3 {
+  grid-area: js;
+}
+
+.block4 {
+  grid-area: vs;
+}
+
+.block5 {
+  grid-area: uv;
+}
+
+/* .grid-parent {
   background-color: darkcyan;
   display: grid;
   gap: 10px;
@@ -22,8 +118,8 @@ div {
     "item1 item1 item1 item1"
     "item2 item4 item4 item4"
     "item3 item4 item4 item4";
-}
-.grid-child {
+} */
+/* .grid-child {
   background-color: brown;
   &:nth-child(1) {
     grid-area: item1;
@@ -43,4 +139,4 @@ div {
     background-color: antiquewhite;
     grid-area: item4;
   }
-}
+} */
