@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  height: 300vh;
+  position: relative;
+}
+
+.box {
+  background-color: brown;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  animation: move-box;
+  animation-timeline: view();
+  animation-range: entry 0% cover 80%;
+}
+
+@keyframes move-box {
+  from { transform: scale(1); }
+  to   { transform: scale(0.7); }
+}
