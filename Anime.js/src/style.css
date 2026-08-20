@@ -1,3 +1,25 @@
 body{
   background-color: black;
 }
+
+.box{
+  background-color: brown;
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-bottom: 2vw;
+}
+
+.ball{
+  background-color: darkgoldenrod;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.item{
+  width: 120px;
+  height: 25px;
+  margin-bottom: 2vw;
+  background-color: cadetblue;
+}
